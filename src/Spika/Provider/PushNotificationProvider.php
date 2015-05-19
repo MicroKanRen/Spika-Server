@@ -151,11 +151,12 @@ class PushNotificationProvider implements ServiceProviderInterface
     }
 
    function sendGCM($apiKey, $json, $app = null) {
-       
-        $app['monolog']->addDebug($apiKey);
+       // API access key from Google API's Console
+                define( 'API_ACCESS_KEY', 'AIzaSyDqru5OTsQ8gy7SWJFC3p5NsCyk5PFsprs' );
+        //$app['monolog']->addDebug($apiKey);
 
         // Set POST variables
-        $url = 'https://android.googleapis.com/gcm/send';
+        //$url = 'https://android.googleapis.com/gcm/send';
 
         $headers = array( 
                         'Authorization: key=' . $apiKey,
@@ -177,7 +178,7 @@ class PushNotificationProvider implements ServiceProviderInterface
 
         curl_close($ch);
         
-        $app['monolog']->addDebug($result);
+        //$app['monolog']->addDebug($result);
 
 
         return $result;
