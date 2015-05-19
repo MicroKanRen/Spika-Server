@@ -41,7 +41,7 @@ define("ACTIVITY_SUMMARY_GROUP_MESSAGE", "group_posts");
 define("APN_DEV_CERT_PATH", "files/apns-dev.pem");
 define("APN_PROD_CERT_PATH", "files/apns-prod.pem");
 //define("GCM_API_KEY","AIzaSyDOkqeO0MZ_igwH_zGyy95DO1ahM8-Ebrw"); OLD GCM_API_KEY
-define("GCM_API_KEY","AIzaSyCrZQ_My91iIKneKVhvI4G1euOS6A_w-qM");
+define("GCM_API_KEY","AIzaSyDqru5OTsQ8gy7SWJFC3p5NsCyk5PFsprs");
 
 define("SEND_EMAIL_METHOD",1); // 0: dont send 1:local smtp 2:gmail
 define("GMAIL_USER",""); 
